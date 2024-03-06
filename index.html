@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt's Cars</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/index.js" type="module" defer></script>
+    <script src="./js/usedCars.js" type="module" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Matt's Used Cars</h1>
+    </div>
+
+    <main>
+        <div class="cols">
+            <div class="leftCol">
+                <form id="filterForm">
+                    <button type="submit" class="filterButton">Apply Filters</button>
+                    <div class="filters">
+                        <div class="filterYear">
+                            <p>Years</p>
+
+                            <div class="min">
+                                <input 
+                                type="number" 
+                                placeholder="Earliest Year"/>
+                            </div>
+
+                            <div class="max">
+                                <input 
+                                type="number" 
+                                placeholder="Latest Year"/>
+                            </div>
+                        </div>
+
+                        <div class="filterMake">
+                            <p>Make:</p>
+
+                            <input 
+                            type="checkbox"
+                            id="option1"
+                            name="option1"
+                            value="value1">
+                            <label for="option1">Ford</label>
+
+                            <input 
+                            type="checkbox"
+                            id="option2"
+                            name="option2"
+                            value="value2">
+                            <label for="option2">Toyota</label>
+
+                            <input 
+                            type="checkbox"
+                            id="option3"
+                            name="option3"
+                            value="value3">
+                            <label for="option3">Lexus</label>
+                        </div>
+
+                        <div class="filterMileage">
+                            <p>Mileage:</p>
+
+                            <input 
+                            type="checkbox"
+                            id="option1"
+                            name="option1"
+                            value="value1">
+                            <label for="option1">10000</label>
+                        </div>
+
+                        <div class="filterPrice">
+                            <p>Price:</p>
+
+                            <div class="least">
+                                <input 
+                                type="number" 
+                                placeholder="Least Expensive"/>
+                            </div>
+
+                            <div class="most">
+                                <input 
+                                type="number" 
+                                placeholder="Most Expensive"/>
+                            </div>
+                        </div>
+
+                        <div class="filterColor">
+                            <p>Color:</p>
+
+                            <input 
+                            type="checkbox"
+                            id="option1"
+                            name="option1"
+                            value="value1">
+                            <label for="option1">Black</label>
+
+                            <input 
+                            type="checkbox"
+                            id="option2"
+                            name="option2"
+                            value="value2">
+                            <label for="option2">White</label>
+
+                            <input 
+                            type="checkbox"
+                            id="option3"
+                            name="option3"
+                            value="value3">
+                            <label for="option3">Red</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="rightCol">
+                <div class="listing"></div>
+            </div>
+        </div>
+    </main>
+
+    
+    
+
+</body>
+</html>
