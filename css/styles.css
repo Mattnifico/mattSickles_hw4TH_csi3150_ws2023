@@ -1,9 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-html{
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
   font-family: "Poppins", "Courier New", Courier, monospace;
+}
+
+.cols .leftCol{
+    width: 30%;
+}
+
+.filterMake{
+    display: flex;
+    flex-direction: column;
+}
+
+.filterMake label{
+    position: relative;
+    top: -1.5rem;
+}
+
+.filterMileage{
+    display: flex;
+    flex-direction: column;
+}
+
+.filterMileage label{
+    position: relative;
+    top: -1.5rem;
+}
+
+.filterColor {
+    display: flex;
+    flex-direction: column;
+}
+
+.filterColor label{
+    position: relative;
+    top: -1.5rem;
 }
