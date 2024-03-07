@@ -6,38 +6,84 @@ html {
   box-sizing: border-box;
   outline: none;
   font-family: "Poppins", "Courier New", Courier, monospace;
+  background-color: antiquewhite;
 }
 
-.cols .leftCol{
-    width: 30%;
+.header {
+  background-color: cornflowerblue;
+  position: relative;
 }
 
-.filterMake{
-    display: flex;
-    flex-direction: column;
+.header h1 {
+  padding: 20px;
 }
 
-.filterMake label{
-    position: relative;
-    top: -1.5rem;
+.cols {
+  display: flex;
 }
 
-.filterMileage{
-    display: flex;
-    flex-direction: column;
+.cols .leftCol {
+  width: 40%;
+  background-color: lightseagreen;
+  margin-left: 3px;
+  margin-right: 20px;
 }
 
-.filterMileage label{
-    position: relative;
-    top: -1.5rem;
+.filters {
+  margin-left: 10px;
+}
+
+.filterMake {
+  display: flex;
+  flex-direction: column;
+}
+
+.filterMake label {
+  position: relative;
+  top: -1.5rem;
 }
 
 .filterColor {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.filterColor label{
-    position: relative;
-    top: -1.5rem;
+.filterColor label {
+  position: relative;
+  top: -1.5rem;
+}
+
+.listing {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    minmax(200px, 1fr)
+  ); /* Adjust the size as needed */
+  gap: 10px;
+}
+
+/* javascript styling (?) */
+
+.carCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.carCard img{
+  width: 100%;
+}
+
+.carCardInfo h2 {
+  font-weight: 400;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carCardInfo p {
+  font-weight: 200;
+  margin: 1rem;
 }

@@ -10,32 +10,47 @@
 </head>
 <body>
     <div class="header">
-        <h1>Matt's Used Cars</h1>
+        <h1>Horizon's Classics and Hypercars</h1>
     </div>
 
     <main>
         <div class="cols">
             <div class="leftCol">
-                <button type="submit" class="filterButton">Apply Filters</button>
                 <div class="filters">
                     <div class="filterYear">
-                        <p>Years:</p>
+                        <h3>Years:</h3>
 
-                        <div class="min">
-                            <input 
-                            type="number" 
-                            placeholder="Earliest Year"/>
-                        </div>
+                        <input 
+                        type="checkbox"
+                        id="option1"
+                        name="option1"
+                        value="value1">
+                        <label for="option1">50s</label>
 
-                        <div class="max">
-                            <input 
-                            type="number" 
-                            placeholder="Latest Year"/>
-                        </div>
+                        <input 
+                        type="checkbox"
+                        id="option1"
+                        name="option1"
+                        value="value1">
+                        <label for="option1">70s</label>
+
+                        <input 
+                        type="checkbox"
+                        id="option1"
+                        name="option1"
+                        value="value1">
+                        <label for="option1">80s</label>
+
+                        <input 
+                        type="checkbox"
+                        id="option1"
+                        name="option1"
+                        value="value1">
+                        <label for="option1">10s</label>
                     </div>
 
                     <div class="filterMake">
-                        <p>Make:</p>
+                        <h3>Make:</h3>
 
                         <input 
                         type="checkbox"
@@ -49,18 +64,67 @@
                         id="option2"
                         name="option2"
                         value="value2">
-                        <label for="option2">Toyota</label>
+                        <label for="option2">Lamborghini</label>
 
                         <input 
                         type="checkbox"
                         id="option3"
                         name="option3"
                         value="value3">
-                        <label for="option3">Lexus</label>
+                        <label for="option3">Meyers</label>
+
+                        <input 
+                        type="checkbox"
+                        id="option3"
+                        name="option3"
+                        value="value3">
+                        <label for="option3">Bugatti</label>
+
+                        <input 
+                        type="checkbox"
+                        id="option3"
+                        name="option3"
+                        value="value3">
+                        <label for="option3">Chevrolet</label>
+
+                        <input 
+                        type="checkbox"
+                        id="option3"
+                        name="option3"
+                        value="value3">
+                        <label for="option3">Peel</label>
+
+                        <input 
+                        type="checkbox"
+                        id="option3"
+                        name="option3"
+                        value="value3">
+                        <label for="option3">Porsche</label>
+
+                        <input 
+                        type="checkbox"
+                        id="option3"
+                        name="option3"
+                        value="value3">
+                        <label for="option3">Ariel</label>
+
+                        <input 
+                        type="checkbox"
+                        id="option3"
+                        name="option3"
+                        value="value3">
+                        <label for="option3">Jeep</label>
+
+                        <input 
+                        type="checkbox"
+                        id="option3"
+                        name="option3"
+                        value="value3">
+                        <label for="option3">BMW</label>
                     </div>
 
                     <div class="filterMileage">
-                        <p>Max Mileage:</p>
+                        <h3>Max Mileage:</h3>
 
                         <input 
                         type="checkbox"
@@ -99,23 +163,46 @@
                     </div>
 
                     <div class="filterPrice">
-                        <p>Price:</p>
+                        <h3>Max Price:</h3>
 
-                        <div class="least">
-                            <input 
-                            type="number" 
-                            placeholder="Least Expensive"/>
-                        </div>
+                        <input 
+                        type="checkbox"
+                        id="option4"
+                        name="option4"
+                        value="value4">
+                        <label for="option4">25k</label>
 
-                        <div class="most">
-                            <input 
-                            type="number" 
-                            placeholder="Most Expensive"/>
-                        </div>
+                        <input 
+                        type="checkbox"
+                        id="option6"
+                        name="option6"
+                        value="value6">
+                        <label for="option6">50k</label>
+
+                        <input 
+                        type="checkbox"
+                        id="option7"
+                        name="option7"
+                        value="value7">
+                        <label for="option7">100k</label>
+
+                        <input 
+                        type="checkbox"
+                        id="option8"
+                        name="option8"
+                        value="value8">
+                        <label for="option8">200k</label>
+
+                        <input 
+                        type="checkbox"
+                        id="option8"
+                        name="option8"
+                        value="value8">
+                        <label for="option8">300k</label>
                     </div>
 
                     <div class="filterColor">
-                        <p>Color:</p>
+                        <h3>Color:</h3>
 
                         <input 
                         type="checkbox"
@@ -136,14 +223,7 @@
                         id="option11"
                         name="option11"
                         value="value11">
-                        <label for="option11">Gray</label>
-
-                        <input 
-                        type="checkbox"
-                        id="option12"
-                        name="option12"
-                        value="value12">
-                        <label for="option12">Silver</label>
+                        <label for="option11">Multicolored</label>
 
                         <input 
                         type="checkbox"
@@ -167,10 +247,11 @@
                         <label for="option15">Red</label>
                     </div>
                 </div>
+                <button type="submit" class="filterButton">Apply Filters</button>
             </div>
 
             <div class="rightCol">
-                <div class="listing"></div>
+                <div class="listing" id="listing"></div>
             </div>
         </div>
     </main>
