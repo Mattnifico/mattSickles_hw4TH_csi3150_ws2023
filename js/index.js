@@ -5,10 +5,10 @@ const listing = document.getElementById("listing");
 
 function createCarProfile(car) {
   const { year, make, model, mileage, price, color } = car;
-  const imageName = `${year}-${model}.png`;
+  const imageName = `${year} ${model}.png`;
   const profileTemplate = `
   <div class="carCard">
-  <img src="../assets/${imageName}" alt="${make} ${model}">
+  <img src="./assets/${imageName}" alt="${make} ${model}">
     <div class="carCardInfo">
         <h2>${make} ${model}</h2>
         <p>Year: ${year}</p>
