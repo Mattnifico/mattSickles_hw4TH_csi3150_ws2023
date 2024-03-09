@@ -29,6 +29,13 @@ html {
   margin-right: 20px;
 }
 
+.cols .leftCol button{
+  position: relative;
+  left: 5rem;
+  margin: 5px;
+  scale: 1.5;
+}
+
 .filters {
   margin-left: 10px;
 }
@@ -53,6 +60,8 @@ html {
   top: -1.5rem;
 }
 
+
+
 .listing {
   display: grid;
   grid-template-columns: repeat(
@@ -62,7 +71,7 @@ html {
   gap: 10px;
 }
 
-/* javascript styling (?) */
+/* javascript styling */
 
 .carCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
